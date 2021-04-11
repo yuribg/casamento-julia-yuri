@@ -1,0 +1,231 @@
+<!-- <?php 
+    if(isset($_POST['submit'])){
+        $msg_nome      = $_POST['nome'];
+        $msg_email     = $_POST['email'];
+        $msg_mensagem  = $_POST['mensagem'];
+
+        $to      = 'yurigalli@gmail.com';
+        $subject = 'Mensagem - Casamento (' . $msg_nome . ')';
+        $message = $msg_nome . 'enviou uma mensagem pelo site\n' . $msg_mensagem;
+        $message = wordwrap($message,70);
+        $headers = 'From: Site Casamento - Marco e Laura <yurigalli@gmail.com>';
+
+        mail($to, $subject, $message, $headers);
+
+        alert("Mail Sent. Thank you " . $first_name . ", we will contact you shortly.");
+        // You can also use header('Location: thank_you.php'); to redirect to another page.
+        }
+?> -->
+
+
+    <!doctype html>
+<!--
+	Itsy by FreeHTML5.co
+	Twitter: https://twitter.com/fh5co
+	Facebook: https://fb.com/fh5co
+	URL: https://freehtml5.co
+-->
+
+<html class="home blog no-js" lang="en-US">
+<head>
+    <title>Fale conosco | Casamento Marco e Laura</title>
+
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css" media="all"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC%3A400%2C700%7CLato%3A400%2C700%2C400italic%2C700italic&amp;ver=4.9.8"
+          type="text/css" media="screen"/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="print.css" type="text/css" media="print"/>
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" id="lt-ie9-css" href="ie.css" type="text/css" media="screen"/>
+    <![endif]-->
+    <script src='js/jquery-3.0.0.min.js'></script>
+    <script src='js/jquery-migrate-3.0.1.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="./images/icons/favicon.png" />
+    <meta name="description" content="Presenças e presentes ❤">
+    <meta property="og:title" content="Casamento Marco e Laura" />
+    <meta property="og:url" content="https://casamento-marco-laura.netlify.app/" />
+    <meta property="og:description" content="Presenças e presentes ❤">
+    <meta property="og:image" content="./images/icons/favicon.png">
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="pt_BR" />
+</head>
+<body class="home sticky-menu sidebar-off" id="top">
+
+<header class="header">
+
+    <div class="header-wrap">
+
+        <div class="logo plain logo-left">
+            <div class="site-title">
+                <a href="/" title="Ir para o Início"><img class="home-favicon" src="./images/icons/favicon.png"> Marco & Laura</a>
+            </div>
+        </div><!-- /logo -->
+
+
+        <nav id="nav" role="navigation">
+            <div class="table">
+                <div class="table-cell">
+                    <ul id="menu-menu-1">
+                        <li class="menu-item">
+                            <a href="/">Início</a></li>
+                        <li class="menu-item">
+                            <a href="presentes">Presentes</a></li>
+                        <li class="menu-item">
+                            <a href="fotos">Fotos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="informacoes">Informações</a></li>
+                        <li class="menu-item">
+                            <a href="contato">Fale conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <a href="#nav" class="menu-trigger"><i class="fa fa-bars"></i></a> -->
+        <!-- <a href="#topsearch" class="search-trigger"><i class="fa fa-search"></i></a> -->
+
+    </div>
+
+</header>
+
+
+<div class="wrap full-wrap">
+    <div class="main-wrap">
+
+        <section class="main">
+            <article class="post page">
+
+                <div class="inner">
+                    <h1 class="page-title">Fale Conosco</h1>
+                    <h3>Contato por Whatsapp</h3>
+
+                    <div class="one_half">
+                        <p><a href="https://wa.me/5561999871144" target="_blank" class="wapp-link more-link"><i class="fa fa-whatsapp"></i> Fale com o Marco</a></p>
+                    </div>
+                    <div class="one_half last">
+                        <p><a href="https://wa.me/5561999693636" target="_blank" class="wapp-link more-link"><i class="fa fa-whatsapp"></i> Fale com a Laura</a></p>
+                    </div>
+                    <div class="clearboth"></div>
+                    
+                    <h3>Contato por E-mail</h3>
+                    <div class="post-content">
+                        <p>Tire qualquer dúvida ou mande qualquer mensagem para os noivos por aqui ❤</p>
+                        <!-- <form id="form_contato" method="POST" action="envia_mensagem.php"> -->
+                        <form id="form_contato" method="POST" action="envia_mensagem.php" data-netlify="true">
+                            <p>
+                                <input type="text" name="nome" id="nome" value="" size="40" placeholder="Nome*">
+                            </p>
+                            <p>
+                                <input type="email" name="email" id="email" value="" size="40" placeholder="Email*">
+                            </p>
+                            <p style="display: none">
+                                <input name="subject" id="subject" size="40" value="Mensagem recebida no site de Casamento">
+                            </p>
+                            <p>
+                                <textarea name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Sua mensagem*"></textarea>
+                            </p>
+
+                            <p class="form-submit"><input type="submit" name="submit" value="Enviar"></p>
+                        </form>
+                    </div>
+                </div>
+
+            </article>
+            <div class="border"></div>
+
+        </section>
+    </div><!-- /main-wrap -->
+</div><!-- /wrap -->
+
+
+<div class="footer-widgets widget-count-4">
+
+    <div class="wrap">
+
+        <div class="mt-about-you-widget">
+            <div class="widget footer">
+
+                <img class="mt-about-avatar" src="images/ml-01q.jpg" alt="Marco e Laura"/>
+
+
+                <h4>Marco e Laura</h4>
+
+                <div class="mt-about-bio">
+                    <p>Olá, somos Marco e Laura, e nos casaremos dia 28 de Agosto de 2021. Mas se você está visitando esse site é porque já sabe disso, né? Você é muito especial para nós, e esperamos que possa estar presente neste momento tão importante das nossas vidas. Beijos e abraços!</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="widget footer"><h4>Links</h4>
+            <ul>
+                <li>
+                    <a href="/">Início</a>
+                </li>
+                <li>
+                    <a href="presentes">Presentes</a>
+                </li>
+                <li>
+                    <a href="fotos">Fotos</a>
+                </li>
+                <li>
+                    <a href="informacoes">Informações</a>
+                </li>
+                <li>
+                    <a href="contato"><i class="fa fa-envelope-o"></i> Fale conosco</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5561999871144"><i class="fa fa-whatsapp"></i> Fale com o Marco</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5561999693636"><i class="fa fa-whatsapp"></i> Fale com a Laura</a>
+                </li>
+            </ul>
+        </div>
+        <div class="widget footer"><a href="fotos"><h4>Galeria de Fotos</h4></a>
+            <div class="textwidget">
+                <a href="fotos"><img src="images/galeria.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<footer class="footer">
+    <div class="footer-wrap">
+        <div id="footer-text">&copy; 2021 Casamento Marco e Laura</div>
+
+        <a href="#top" id="btt">Início <i class="fa fa-chevron-up"></i></a>
+    </div>
+</footer>
+
+<div id="topsearch">
+    <div class="table">
+        <div class="table-cell">
+            <form role="search" method="get" class="searchform" action="/">
+                <div>
+                    <input type="text" value="" name="s" class="s" placeholder="Digite e aperte enter"/>
+                    <input type="submit" class="searchsubmit" value="Search"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <a href="#topsearch" class="search-trigger"><i class="fa fa-times"></i></a>
+</div>
+
+
+<script>var ie9 = false;</script>
+<!--[if lte IE 9 ]>
+<script> var ie9 = true; </script>
+<![endif]-->
+<script src="js/global-plugins.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
