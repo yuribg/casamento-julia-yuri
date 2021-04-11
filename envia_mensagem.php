@@ -10,7 +10,7 @@ $to      = 'yurigalli@gmail.com';
 $subject = 'Mensagem - Casamento (' . $msg_nome . ')';
 $message = $msg_nome . 'enviou uma mensagem pelo site\n' . $msg_mensagem;
 $message = wordwrap($message,70);
-$headers = 'From: Site Casamento - Marco e Laura <yurigalli@gmail.com>';
+$headers = 'From: Site Casamento - Julia e Yuri <yurigalli@gmail.com>';
 
 mail($to, $subject, $message, $headers);
 
@@ -18,8 +18,8 @@ mail($to, $subject, $message, $headers);
 $subject = 'Mensagem - Casamento (' . $msg_nome . ')';
 $message = $msg_nome . 'enviou uma mensagem pelo site\n' . $msg_mensagem;
 $message = wordwrap($message,70);
-$headers = 'From: Site Casamento - Marco e Laura <lauranfreitas7@gmail.com>' . PHP_EOL .
-    'Reply-To: Site Casamento - Marco e Laura <lauranfreitas7@gmail.com>' . PHP_EOL .
+$headers = 'From: Site Casamento - Julia e Yuri <lauranfreitas7@gmail.com>' . PHP_EOL .
+    'Reply-To: Site Casamento - Julia e Yuri <lauranfreitas7@gmail.com>' . PHP_EOL .
     'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers);
@@ -28,8 +28,8 @@ $to      = 'marco.tf2@gmail.com';
 $subject = 'Mensagem - Casamento (' . $msg_nome . ')';
 $message = $msg_nome . 'enviou uma mensagem pelo site\n' . $msg_mensagem;
 $message = wordwrap($message,70);
-$headers = 'From: Site Casamento - Marco e Laura <marco.tf2@gmail.com>' . PHP_EOL .
-    'Reply-To: Site Casamento - Marco e Laura <marco.tf2@gmail.com>' . PHP_EOL .
+$headers = 'From: Site Casamento - Julia e Yuri <marco.tf2@gmail.com>' . PHP_EOL .
+    'Reply-To: Site Casamento - Julia e Yuri <marco.tf2@gmail.com>' . PHP_EOL .
     'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers); */
