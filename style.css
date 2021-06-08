@@ -1257,7 +1257,7 @@ body.sticky-menu .site-title {
   position: relative;
 }
 body.sticky-menu .wrap.full-wrap {
-  padding-top: 6.5em;
+  padding-top: 3em;
 }
 
 .wrap {
@@ -3703,7 +3703,7 @@ header.header nav,
   }
 
   body.sticky-menu .wrap.full-wrap {
-    padding-top: 5.5em;
+    padding-top: 3em;
   }
 
   .inner {
