@@ -231,6 +231,7 @@ img {
   box-sizing: border-box;
 }
 
+
 /* ==========================================================================
 		0.1 Plugins
 	========================================================================== */
@@ -1035,6 +1036,7 @@ body.overlay-active header.header, body.overlay-active .wrap,
 .form-wrap {
   background-color: #a6e8f0;
   width: 100%;
+  overflow: hidden;
 }
 
 #topsearch {
@@ -2231,20 +2233,7 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-
-@media screen and (min-width: 40em) {
-  /* 640px */
-  html {
-    font-size: 55.5%;
-  }
-
-  h1.large {
-    font-size: 178px;
-    font-size: 17.8rem;
-  }
-}
-@media screen and (min-width: 57.5em) {
-  /* 920px */
+/* @media screen and (min-width: 57.5em) {
   html {
     font-size: 62.5%;
   }
@@ -2253,7 +2242,7 @@ html {
     font-size: 208px;
     font-size: 20.8rem;
   }
-}
+} */
 /* ==========================================================================
   12. Colors
 ==========================================================================
@@ -2476,7 +2465,7 @@ footer.footer {
   font-weight: 700;
   font-size: 150%;
   margin-top: 30px;
-  padding: 60px 10px 20px 10px;
+  padding: 10px 10px 20px 10px;
   line-height: 1.2;
   position: relative;
   color: #34495e;
@@ -3537,7 +3526,7 @@ header.header nav,
     padding-top: 0;
   }
 }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 767px) {
   /* 640px */
   .home-sticky {
     padding-bottom: 0;
@@ -3759,8 +3748,6 @@ header.header nav,
   }
 }
 
-/*# sourceMappingURL=style.css.map */
-
 /* User css */
 .home-favicon {
   width: 30px;
@@ -3770,4 +3757,93 @@ header.header nav,
 
 .page-title {
   color: #0090b0;
+}
+
+.post-content {
+  font-size: 16px;
+}
+
+h3, h4, .post-content h2, .author-bio h1 {
+  color: rgb(52, 73, 94);
+}
+
+.mt-about-bio, .footer a {
+  font-size: 13px;
+}
+
+.author-bio p {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero .hero-inner .inner {
+    padding: 15px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .hero .hero-line-two {
+    font-size: 32px;
+  }
+
+  .hero .hero-line-three {
+    font-size: 32px;
+  }
+
+  .post h2.entry-title {
+    padding-top: 10px;
+  }
+
+  h2 a {
+    font-size: 36px;
+  }
+
+  article .inner {
+    padding: 0em 2em;
+  }
+
+  .post-content {
+    text-align: center;
+  }
+  
+  .home-sticky .home-sticky-post {
+    float: none;
+  }
+
+  .mt-about-bio, .footer a {
+    font-size: 14px;
+  }
+
+  .author-bio p {
+    font-size: 15px;
+  }
+
+  .author-bio h3 {
+    font-size: 32px;
+  }
+
+  .one_fifth a p {
+    font-size: 24px;
+    margin-top: 0em;
+    margin-bottom: 1em;
+  }
+
+  article, .author-wrap {
+    padding-bottom: 0em;
+  }
+
+  .page h1 {
+    padding-top: 32px;
+    text-align: center;
+  }
+
+  .inner h3 {
+    text-align: center;
+  }
+
+  .form-wrap iframe {
+    width: 100%;
+  }
 }
