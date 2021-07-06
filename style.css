@@ -1031,7 +1031,7 @@ body.overlay-active header.header, body.overlay-active .wrap,
   width: initial;
   padding-top: 3em !important;
   padding-bottom: 3em;
-  margin-bottom: -220px;
+  margin-bottom: -250px;
 }
 .form-wrap {
   background-color: #e3eae8;
@@ -3900,5 +3900,9 @@ h3 {
 
   .menu-item {
     font-size: 32px;
+  }
+
+  .wrap.full-wrap.google-form {
+    margin-bottom: 0px;
   }
 }
